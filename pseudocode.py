@@ -1,5 +1,39 @@
 """
 
+
+class Board:
+
+    function init()
+        pass
+    
+        
+    function add_move(player, position)
+        add the player to the board
+    
+        
+    function check_winner(player)
+    
+        create compare string variable
+
+        for every row in the board
+            join every position in the row into a string
+            if the joined string equals the compare string
+                return true    
+
+        for every column in the board
+            join every position in the column into a string
+            if the joined string equals the compare string
+                return true
+        
+        if the primary or seconday diagonal equals the compare string
+            return true
+        
+        return false
+        
+
+
+
+                
 class TicTacToe: 
     
     function init()
@@ -29,12 +63,13 @@ class TicTacToe:
             get the user move 
             add the user move to the board
             if the user has won
-                display game over message
+                display a you win message
                 break out of the while loop
             get the computer's move
             add the computer's move to the board
             check if the computer has won
-                end the game
+                display a you lose message
+                break out of the while loop
 
 
 """
