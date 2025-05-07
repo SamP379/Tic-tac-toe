@@ -16,18 +16,26 @@ class TicTacToe:
             get the user to enter a move
         return the user move
     
-    
+        
+    function get_computer_move()
+        generate a random position on the board
+        while the move is not valid
+            generate a random position on the board
+        return the random position
+
+
     function main_loop()
         while the game is not over
             display the board
             get the user move 
             add the user move to the board
             if the user has won
-                end the game
+                display game over message
+                break out of the while loop
             get the computer move
             add the computer move to the board
             if the computer has won
                 end the game
 
-   
+
 """
