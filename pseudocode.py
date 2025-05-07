@@ -37,7 +37,7 @@ class Board:
 class TicTacToe: 
     
     function init()
-        set the game is over to be false
+        set the game state to be true
         create the game board
         get the user's player choice
         set the computer's player
@@ -62,14 +62,14 @@ class TicTacToe:
             display the board
             get the user move 
             add the user move to the board
-            if the user has won
+            check if the user has won
                 display a you win message
-                break out of the while loop
+                set the game state to false
             get the computer's move
             add the computer's move to the board
             check if the computer has won
                 display a you lose message
-                break out of the while loop
+                set the game state to false
 
 
 """
