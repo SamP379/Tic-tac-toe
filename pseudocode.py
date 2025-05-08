@@ -4,7 +4,7 @@
 class Board:
 
     function init()
-        pass
+        create the board
     
         
     function add_move(player, position)
@@ -40,7 +40,21 @@ class TicTacToe:
         set the game state to be true
         create the game board
         get the user's player choice
-        set the computer's player
+        get the computer's player
+        call the main loop function
+    
+        
+    function get_user_player()
+        get the user to enter their player
+        while the user input is not valid
+            get the user to enter their player
+        return the user's player
+    
+        
+    function get_computer_player()
+        if the user choose X 
+            return O
+        return X
 
 
     function get_user_move()
@@ -62,7 +76,7 @@ class TicTacToe:
             display the board
             get the user move 
             add the user move to the board
-            check if the user has won
+            if the user has won
                 display a you win message
                 set the game state to false
             get the computer's move
