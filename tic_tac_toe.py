@@ -55,7 +55,6 @@ class TicTacToe:
         else:
             print("You lose!")
         self.game_over = True
-
     
 
     def main_loop(self):
