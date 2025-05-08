@@ -41,7 +41,6 @@ class TicTacToe:
         create the game board
         get the user's player choice
         get the computer's player
-        call the main loop function
     
         
     function get_user_player()
