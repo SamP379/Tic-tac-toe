@@ -92,7 +92,7 @@ class TicTacToe:
         return the computer's move
     
     
-    function check_game_over()
+    function game_over()
         if the user has won or the computer has won
             return true
         elif the board is full
@@ -120,6 +120,5 @@ class TicTacToe:
                 add the computer move to the board
                 if the game is over
                     end the game
-
                     
 """
