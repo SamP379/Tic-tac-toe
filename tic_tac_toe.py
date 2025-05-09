@@ -3,6 +3,8 @@ from board import Board
 
 
 class TicTacToe:
+    """A class to represent the game Tic Tac Toe. The class has a board object attribute, a boolean variable game_over
+    attribute, and user and computer attributes to represent which symbols they are each playing as."""
 
     def __init__(self):
         self.game_over = False
