@@ -21,14 +21,9 @@ class Board:
     def valid_move(self, position : tuple):
         row = position[0]
         column = position[1]
-        try:
-            row = int(row)
-            column = int(column)
-            if (row < 0 or row > 2) or (column < 0 or column > 2):
-                raise Exception
-            elif self.board[row][column] != " ":
-                raise Exception
-        except Exception:
+        if (row < 0 or row > 2) or (column < 0 or column > 2):
+            return False
+        elif self.board[row][column] != " ":
             return False
         return True
     
